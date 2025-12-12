@@ -1,35 +1,40 @@
 import React, { useEffect, useState } from 'react';
 import './NetflixTitle.css';
-import netflixSound from './netflix-sound.mp3';
 import { useNavigate } from 'react-router-dom';
 import logoImage from '../src/images/logo-2.png'; // Update with the path to your logo
 
 const NetflixTitle = () => {
-  const [isClicked, setIsClicked] = useState(false);
   const navigate = useNavigate();
-
-  const handlePlaySound = () => {
-    const audio = new Audio(netflixSound);
-    audio.play().catch(error => console.error("Audio play error:", error));
-    setIsClicked(true); // Starts animation after clicking
-  };
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (isClicked) {
-      const timer = setTimeout(() => {
+    // Simulate loading time
+    const timer = setTimeout(() => {
+      setLoading(false);
+      // Slight delay before navigation to allow exit animation if needed
+      setTimeout(() => {
         navigate('/browse');
-      }, 4000);
-      return () => clearTimeout(timer);
-    }
-  }, [isClicked, navigate]);
+      }, 400);
+    }, 1000); // 1 second loading
+
+    return () => clearTimeout(timer);
+  }, [navigate]);
 
   return (
-    <div className="netflix-container" onClick={handlePlaySound}>
-      <img 
-        src={logoImage} 
-        alt="Custom Logo" 
-        className={`netflix-logo ${isClicked ? 'animate' : ''}`} 
-      />
+    <div className="netflix-container">
+      <div className="content-wrapper">
+        <img
+          src={logoImage}
+          alt="Custom Logo"
+          className={`netflix-logo ${loading ? 'loading' : 'finished'}`}
+        />
+        {loading && (
+          <div className="loading-bar-container">
+            <div className="loading-bar-progress"></div>
+            <div className="loading-text">INITIALIZING...</div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
