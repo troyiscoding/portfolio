@@ -4,10 +4,7 @@ Welcome to my personal portfolio project! 🚀 This website showcases my work, s
 
 Explore specific subdomains tailored to different tech stacks:
 
-- 🌟 [java.troymanning.com](https://java.troymanning.com/) for Java Spring Boot-related work.
-- 🌟 [node.troymanning.com](https://node.troymanning.com/) for Node.js and backend development.
-- 🌟 [frontend.troymanning.com](https://frontend.troymanning.com/) for frontend development expertise.
-- 🌟 [ror.troymanning.com](https://ror.troymanning.com/) for Ruby on Rails projects.
+
 
 ![Screenshot from 2024-12-08 19-19-06](https://github.com/user-attachments/assets/f8220485-16ec-48cf-8cb2-7853540c5724)
 

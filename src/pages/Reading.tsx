@@ -2,30 +2,32 @@
 
 import React from 'react';
 import './Reading.css';
-import atomicHabits from '../images/atomic_habits.jpg';
-import richDadPoorDad from '../images/rich_dad_poor_dad.jpg';
-import alchemist from '../images/alchemist.jpg';
+// import atomicHabits from '../images/atomic_habits.jpg';
+// import richDadPoorDad from '../images/rich_dad_poor_dad.jpg';
+// import alchemist from '../images/alchemist.jpg';
 import eatThatFrog from '../images/eat_that_frog.jpg';
-import vijayanikiAidhuMetlu from '../images/vijayaniki_aidu_metlu.jpg';
-import venneloAdapilla from '../images/vennelo_adapilla.jpeg';
+// import vijayanikiAidhuMetlu from '../images/vijayaniki_aidu_metlu.jpg';
+// import venneloAdapilla from '../images/vennelo_adapilla.jpeg';
+
+const placeholder = "https://via.placeholder.com/150";
 
 const books = [
   {
     title: "Atomic Habits",
     author: "James Clear",
-    imgSrc: atomicHabits,
+    imgSrc: placeholder,
     description: "A practical guide to building good habits and breaking bad ones.",
   },
   {
     title: "Rich Dad Poor Dad",
     author: "Robert Kiyosaki",
-    imgSrc: richDadPoorDad,
+    imgSrc: placeholder,
     description: "An eye-opener on wealth, assets, and financial literacy.",
   },
   {
     title: "The Alchemist",
     author: "Paulo Coelho",
-    imgSrc: alchemist,
+    imgSrc: placeholder,
     description: "A magical journey of following one's dreams.",
   },
   {
@@ -37,13 +39,13 @@ const books = [
   {
     title: "Vijayaniki Aidhu Metlu",
     author: "Yandamoori Veerendranath",
-    imgSrc: vijayanikiAidhuMetlu,
+    imgSrc: placeholder,
     description: "An inspirational Telugu book for personal growth.",
   },
   {
     title: "Vennelo Adapilla",
     author: "Yandamoori Veerendranath",
-    imgSrc: venneloAdapilla,
+    imgSrc: placeholder,
     description: "A classic Telugu romantic novel that touches the heart.",
   },
 ];

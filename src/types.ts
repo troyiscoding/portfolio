@@ -12,7 +12,7 @@ export interface ProfileBanner {
 
 export interface WorkPermit {
   visaStatus: string;
-  expiryDate: Date;
+  expiryDate: string;
   summary: string;
   additionalInfo: string;
 }
@@ -52,7 +52,7 @@ export interface ContactMe {
   phoneNumber: string;
 }
 
-export interface Skill { 
+export interface Skill {
   name: string;
   category: string;
   description: string;

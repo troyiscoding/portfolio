@@ -1,24 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './ContactMe.css';
-import profilePic from '../images/sumanth.jpeg';
-import { FaEnvelope, FaPhoneAlt, FaCoffee, FaLinkedin } from 'react-icons/fa';
-import { ContactMe as IContactMe } from '../types';
-import { getContactMe } from '../queries/getContactMe';
+import { contactMeData } from '../data';
+import profilePic from '../images/troy.jpg';
+import { FaEnvelope, FaPhoneAlt, FaLinkedin, FaSmileBeam } from 'react-icons/fa';
 
 const ContactMe: React.FC = () => {
-
-  const [userData, setUserData] = useState<IContactMe>()
-
-  useEffect(() => {
-    async function fetchUserData() {
-      const data = await getContactMe();
-      setUserData(data);
-    }
-
-    fetchUserData();
-  }, []);
-
-  if (!userData) return <div>Loading...</div>;
+  const userData = contactMeData;
 
   return (
     <div className="contact-container">
@@ -42,7 +29,7 @@ const ContactMe: React.FC = () => {
         </div>
       </div>
       <div className="contact-header">
-        <p>I'm always up for a chat or a coffee! Feel free to reach out.</p>
+        <p>Feel free to reach out!</p>
       </div>
       <div className="contact-details">
         <div className="contact-item">
@@ -58,8 +45,8 @@ const ContactMe: React.FC = () => {
           </a>
         </div>
         <div className="contact-fun">
-          <p>Or catch up over a coffee ☕</p>
-          <FaCoffee className="coffee-icon" />
+          <p>Or have a little chat. </p>
+          <FaSmileBeam className="contact-icon" />
         </div>
       </div>
     </div>

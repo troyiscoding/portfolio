@@ -15,7 +15,7 @@ const NetflixTitle = () => {
       setTimeout(() => {
         navigate('/browse');
       }, 400);
-    }, 1000); // 1 second loading
+    }, 1500); // 1 second loading
 
     return () => clearTimeout(timer);
   }, [navigate]);
