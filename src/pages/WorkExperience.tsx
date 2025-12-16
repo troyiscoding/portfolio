@@ -17,7 +17,7 @@ const WorkExperience: React.FC = () => {
   return (
     <>
       <div className="timeline-container">
-        <h2 className="timeline-title">📅 Work Experience & Education Timeline</h2>
+        <h2 className="timeline-title"> Work Experience & Education Timeline</h2>
       </div>
       <VerticalTimeline>
         {timeLineData.map((item, index) => (

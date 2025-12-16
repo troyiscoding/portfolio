@@ -9,7 +9,7 @@ export const contactMeData: ContactMe = {
     summary: "Experienced Full Stack Developer with a passion for building scalable web applications.",
     companyUniversity: "Tech Company",
     linkedinLink: "https://linkedin.com/in/troymanning1",
-    email: "troy@troymanning.com",
+    email: "troymanning@ieee.org",
     phoneNumber: "+1 480 665 1426"
 };
 
@@ -84,7 +84,7 @@ export const certificationsData: Certification[] = [
 
 export const profileBannerData: ProfileBanner = {
     backgroundImage: { url: "https://via.placeholder.com/1500x500" },
-    headline: "Building the Future of Web",
+    headline: "Building the future of technology",
     resumeLink: { url: "#" },
     linkedinLink: "https://linkedin.com/in/troymanning",
     profileSummary: "Passionate developer creating intuitive and dynamic user experiences."
