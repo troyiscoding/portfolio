@@ -86,6 +86,6 @@ export const profileBannerData: ProfileBanner = {
     backgroundImage: { url: "https://via.placeholder.com/1500x500" },
     headline: "Building the future of technology",
     resumeLink: { url: "#" },
-    linkedinLink: "https://linkedin.com/in/troymanning",
+    linkedinLink: "https://linkedin.com/in/troymanning1",
     profileSummary: "Passionate developer creating intuitive and dynamic user experiences."
 };

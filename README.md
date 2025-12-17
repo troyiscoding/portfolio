@@ -1,4 +1,4 @@
-## 🌟 Troy Manning's Netflix inspired Portfolio 🌟 - https://troymanning.com/
+## 🌟 Troy Manning's Netflix inspired Portfolio 🌟 - https://troyyy.com/
 
 Welcome to my personal portfolio project! 🚀 This website showcases my work, skills, and experiences in web development. It's designed to be lightweight, customizable, and professional while maintaining an approachable style.
 
@@ -97,24 +97,11 @@ Your feedback is valuable and helps make this project better for everyone. Thank
 
 ---
 
-## 🌟 Acknowledgments
-
-- Thanks to [DatoCMS](https://www.datocms.com) for powering the dynamic content.
-- Inspired by countless developers in the open-source community. 💻
-- Special shoutout to all contributors—you rock! 🤘
-
----
-
 ## 📧 Contact Me
 
-- 💼 [Portfolio Website](https://troymanning.com)
-- 📧 Email: [troy@troymanning.com](mailto:troy@troymanning.com)
-- 🔗 [LinkedIn](https://linkedin.com/in/troymanning)
+- [Portfolio Website](https://troyyy.com)
+- Email: [troymanning@ieee.org](mailto:troymanning@ieee.org)
+- [LinkedIn](https://linkedin.com/in/troymanning1)
 
 ---
 
-## 📜 License
-
-This project is licensed under the MIT License. Feel free to use it, modify it, and share it! 🌈
-
----
