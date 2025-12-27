@@ -5,8 +5,8 @@ import profilePic from './images/troy.jpg';
 export const contactMeData: ContactMe = {
     profilePicture: { url: profilePic },
     name: "Troy Manning",
-    title: "Full Stack Developer",
-    summary: "Experienced Full Stack Developer with a passion for building scalable web applications.",
+    title: "Systems Administrator",
+    summary: "Experienced Systems Administrator with a passion for designing, securing, and maintaining robust IT infrastructure.",
     companyUniversity: "Tech Company",
     linkedinLink: "https://linkedin.com/in/troymanning1",
     email: "troymanning@ieee.org",
@@ -29,14 +29,28 @@ export const projectsData: Project[] = [
 ];
 
 export const skillsData: Skill[] = [
-    { name: "React", category: "Frontend", description: "Building UI components", icon: "FaReact" },
-    { name: "Node.js", category: "Backend", description: "Server-side logic", icon: "FaNodeJs" },
-    { name: "TypeScript", category: "Languages", description: "Type-safe JavaScript", icon: "SiTypescript" },
-    { name: "C++", category: "Languages", description: "Type-safe JavaScript", icon: "SiTypescript" },
-    { name: "BluetoothLE", category: "Languages", description: "Type-safe JavaScript", icon: "SiTypescript" },
-    { name: "CAD", category: "Languages", description: "Type-safe JavaScript", icon: "SiTypescript" },
-    { name: "Rapid Prototyping", category: "Languages", description: "Type-safe JavaScript", icon: "SiTypescript" }
+    // Systems & Infrastructure
+    { name: "Linux Admin", category: "Systems & Infrastructure", description: "Expertise in Ubuntu & RHEL environments", icon: "FaLinux" },
+    { name: "Windows Server", category: "Systems & Infrastructure", description: "Clustering, HA, Active Directory", icon: "FaWindows" },
+    { name: "Server Hardware", category: "Systems & Infrastructure", description: "Rack management, bare metal provisioning", icon: "FaServer" },
+    { name: "High Availability", category: "Systems & Infrastructure", description: "Failover clustering & load balancing", icon: "FaServer" },
+    { name: "Virtualization", category: "Systems & Infrastructure", description: "VMware, Hyper-V, & Containerization", icon: "SiVmware" },
 
+    // Networking & Security
+    { name: "Networking", category: "Networking", description: "TCP/IP, VLANs, DNS/DHCP, VPNs", icon: "FaNetworkWired" },
+    { name: "Security", category: "Networking", description: "Firewall config, system hardening", icon: "FaShieldAlt" },
+
+    // Tools & Administration
+    { name: "Shell Scripting", category: "Tools", description: "Bash & PowerShell automation", icon: "SiGnubash" },
+    { name: "Documentation", category: "Tools", description: "Technical guides & system mapping", icon: "FaBook" },
+    { name: "Education Tech", category: "Tools", description: "LMS, classroom AV & support", icon: "FaGraduationCap" },
+    { name: "Windows Tools", category: "Tools", description: "SCCM, Jamf, Group Policy", icon: "FaWindows" },
+
+    // Programming
+    { name: "Python (ML)", category: "Programming", description: "Automation & Machine Learning models", icon: "FaPython" },
+    { name: "C / C++", category: "Programming", description: "System-level application development", icon: "SiC" },
+    { name: "Java", category: "Programming", description: "Object-oriented backend development", icon: "FaJava" },
+    { name: "React", category: "Programming", description: "Modern frontend web interfaces", icon: "FaReact" }
 ];
 
 export const timelineData: TimelineItem[] = [
@@ -84,8 +98,8 @@ export const certificationsData: Certification[] = [
 
 export const profileBannerData: ProfileBanner = {
     backgroundImage: { url: "https://via.placeholder.com/1500x500" },
-    headline: "Building the future of technology",
+    headline: "Reliable Systems & Infrastructure",
     resumeLink: { url: "#" },
     linkedinLink: "https://linkedin.com/in/troymanning1",
-    profileSummary: "Passionate developer creating intuitive and dynamic user experiences."
+    profileSummary: "Passionate Systems Administrator ensuring uptime, security, and scalability of complex enterprise environments."
 };

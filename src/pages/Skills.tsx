@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './Skills.css';
 
-import { FaReact, FaNodeJs, FaAws, FaDocker, FaGitAlt, FaJava } from 'react-icons/fa';
-import { SiRubyonrails, SiTypescript, SiPostgresql, SiMysql, SiKubernetes, SiGooglecloud, SiSpringboot, SiPhp, SiNetlify, SiHeroku, SiHtml5, SiCss3, SiRabbitmq, SiImessage } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaAws, FaDocker, FaGitAlt, FaJava, FaLinux, FaUbuntu, FaRedhat, FaWindows, FaServer, FaNetworkWired, FaBook, FaGraduationCap, FaPython, FaShieldAlt } from 'react-icons/fa';
+import { SiRubyonrails, SiTypescript, SiPostgresql, SiMysql, SiKubernetes, SiGooglecloud, SiSpringboot, SiPhp, SiNetlify, SiHeroku, SiHtml5, SiCss3, SiRabbitmq, SiImessage, SiCplusplus, SiGnubash, SiPowershell, SiVmware } from 'react-icons/si';
 import { Skill } from '../types';
 
 const iconMap: { [key: string]: JSX.Element } = {
@@ -23,6 +23,20 @@ const iconMap: { [key: string]: JSX.Element } = {
   SiNetlify: <SiNetlify />,
   SiRabbitmq: <SiRabbitmq />,
   SiImessage: <SiImessage />,
+  FaLinux: <FaLinux />,
+  FaUbuntu: <FaUbuntu />,
+  FaRedhat: <FaRedhat />,
+  FaWindows: <FaWindows />,
+  FaServer: <FaServer />,
+  FaNetworkWired: <FaNetworkWired />,
+  FaBook: <FaBook />,
+  FaGraduationCap: <FaGraduationCap />,
+  FaPython: <FaPython />,
+  FaShieldAlt: <FaShieldAlt />,
+  SiC: <SiCplusplus />,
+  SiGnubash: <SiGnubash />,
+  SiPowershell: <SiPowershell />,
+  SiVmware: <SiVmware />,
 };
 
 
