@@ -11,11 +11,13 @@ interface ContinueWatchingProps {
 const continueWatchingConfig = {
   recruiter: [
     { title: "Blogs", imgSrc: "https://picsum.photos/id/1027/300/200", link: "/blogs" },
+    { title: "Home Lab HPC", imgSrc: "https://picsum.photos/seed/hpc/300/200", link: "/hpc" },
     { title: "Photography", imgSrc: "https://picsum.photos/seed/photography/300/200", link: "/photography" },
     { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
   ],
   developer: [
     { title: "Blogs", imgSrc: "https://picsum.photos/id/1027/300/200", link: "/blogs" },
+    { title: "Home Lab HPC", imgSrc: "https://picsum.photos/seed/hpc/300/200", link: "/hpc" },
     { title: "Certifications", imgSrc: "https://picsum.photos/id/1028/300/200", link: "/certifications" },
     { title: "Photography", imgSrc: "https://picsum.photos/seed/photography/300/200", link: "/photography" },
     { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }

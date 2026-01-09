@@ -18,13 +18,19 @@ export const projectsData: Project[] = [
         title: "Portfolio Website",
         description: "A personal portfolio website built with React and Vite.",
         techUsed: "React, Vite, TypeScript, CSS",
-        image: { url: "https://troyyy.com" }
+        image: { url: "https://picsum.photos/seed/website/300/200" }
     },
     {
         title: "Boat Safety Device",
         description: "Obtained Provisional Patent for automatic flag raising and lowering system for boats.",
         techUsed: "ESP32, C++, BluetoothLE, CAD, Rapid Prototyping",
-        image: { url: "https://via.placeholder.com/300" }
+        image: { url: "https://picsum.photos/seed/lake/300/200" }
+    },
+    {
+        title: "Home Lab HPC Environment",
+        description: "Single-node Slurm cluster with MPI support, simulating a real-world research computing environment.",
+        techUsed: "Slurm, Munge, MPICH, Ubuntu, Bash",
+        image: { url: "https://picsum.photos/seed/hpc/300/200" }
     }
 ];
 
