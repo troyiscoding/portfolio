@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Projects.css';
 import { FaReact, FaNodeJs, FaAws, FaDatabase, FaDocker, FaAngular, FaGithub, FaGitlab, FaGoogle, FaJava, FaJenkins, FaMicrosoft, FaPython, FaVuejs } from 'react-icons/fa';
 import { SiRubyonrails, SiPostgresql, SiMongodb, SiMaterialdesign, SiHtml5, SiCss3, SiJquery, SiAwsamplify, SiFirebase, SiTerraform, SiArgo } from 'react-icons/si';
@@ -61,6 +62,7 @@ const techIcons: { [key: string]: JSX.Element } = {
 
 const Projects: React.FC = () => {
   const projects = projectsData;
+  const navigate = useNavigate();
 
   return (
     <div className="projects-container">
@@ -69,7 +71,11 @@ const Projects: React.FC = () => {
           <div
             key={index}
             className="project-card"
-            style={{ '--delay': `${index * 0.1}s` } as React.CSSProperties}
+            style={{
+              '--delay': `${index * 0.1}s`,
+              cursor: project.link ? 'pointer' : 'default'
+            } as React.CSSProperties}
+            onClick={() => project.link && navigate(project.link)}
           >
             <img src={project.image.url} alt={project.title} className="project-image" />
             <div className="project-details">

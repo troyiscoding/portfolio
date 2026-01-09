@@ -30,7 +30,8 @@ export const projectsData: Project[] = [
         title: "Home Lab HPC Environment",
         description: "Single-node Slurm cluster with MPI support, simulating a real-world research computing environment.",
         techUsed: "Slurm, Munge, MPICH, Ubuntu, Bash",
-        image: { url: "https://picsum.photos/seed/hpc/300/200" }
+        image: { url: "https://picsum.photos/seed/hpc/300/200" },
+        link: "/hpc"
     }
 ];
 
