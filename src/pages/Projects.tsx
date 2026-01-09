@@ -71,7 +71,7 @@ const Projects: React.FC = () => {
             className="project-card"
             style={{ '--delay': `${index * 0.1}s` } as React.CSSProperties}
           >
-            <img src={project.image.url} alt={project.title} className="project-image" />
+            {/* <img src={project.image.url} alt={project.title} className="project-image" /> */}
             <div className="project-details">
               <h3>{project.title}</h3>
               <p>{project.description}</p>

@@ -9,10 +9,9 @@ const Recommendations = React.lazy(() => import('./pages/Recommendations'));
 const Skills = React.lazy(() => import('./pages/Skills'));
 const Projects = React.lazy(() => import('./pages/Projects'));
 const ContactMe = React.lazy(() => import('./pages/ContactMe'));
-const Music = React.lazy(() => import('./pages/Music'));
-const Reading = React.lazy(() => import('./pages/Reading'));
 const Blogs = React.lazy(() => import('./pages/Blogs'));
 const Certifications = React.lazy(() => import('./pages/Certifications'));
+const NaturePhotography = React.lazy(() => import('./pages/NaturePhotography'));
 const Layout = React.lazy(() => import('./Layout'));
 
 const App: React.FC = () => {
@@ -28,10 +27,9 @@ const App: React.FC = () => {
         <Route path="/skills" element={<Layout><Skills /></Layout>} />
         <Route path="/projects" element={<Layout><Projects /></Layout>} />
         <Route path="/contact-me" element={<Layout><ContactMe /></Layout>} />
-        <Route path="/music" element={<Layout><Music /></Layout>} />
-        <Route path="/reading" element={<Layout><Reading /></Layout>} />
         <Route path="/blogs" element={<Layout><Blogs /></Layout>} />
         <Route path="/certifications" element={<Layout><Certifications /></Layout>} />
+        <Route path="/photography" element={<Layout><NaturePhotography /></Layout>} />
       </Routes>
     </React.Suspense>
   );

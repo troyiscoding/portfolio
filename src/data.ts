@@ -50,7 +50,14 @@ export const skillsData: Skill[] = [
     { name: "Python (ML)", category: "Programming", description: "Automation & Machine Learning models", icon: "FaPython" },
     { name: "C / C++", category: "Programming", description: "System-level application development", icon: "SiC" },
     { name: "Java", category: "Programming", description: "Object-oriented backend development", icon: "FaJava" },
-    { name: "React", category: "Programming", description: "Modern frontend web interfaces", icon: "FaReact" }
+    { name: "React", category: "Programming", description: "Modern frontend web interfaces", icon: "FaReact" },
+
+    // HPC & Research Computing
+    { name: "HPC / MPI", category: "HPC & Research Computing", description: "Parallel processing & multi-threading", icon: "FaMicrochip" },
+    { name: "Batch Scheduling", category: "HPC & Research Computing", description: "Slurm, Moab, LSF job management", icon: "FaTasks" },
+    { name: "Code Optimization", category: "HPC & Research Computing", description: "Algorithm improvement & profiling", icon: "FaTachometerAlt" },
+    { name: "Compiling / Make", category: "HPC & Research Computing", description: "Building from source & Makefile creation", icon: "FaCode" },
+    { name: "Technical Training", category: "HPC & Research Computing", description: "User support & documentation", icon: "FaChalkboardTeacher" }
 ];
 
 export const timelineData: TimelineItem[] = [
@@ -58,8 +65,12 @@ export const timelineData: TimelineItem[] = [
         name: "BYU Physics and Astronomy Department - Provo, Utah",
         timelineType: "work",
         title: "Systems Engineer/ JR. Systems Administrator",
-        techStack: "RHEL Server Management, Linux, Windows, JAMF, Active Directory, Windows Server 2019, Network Management, Security Management, ",
-        summaryPoints: ["Led development of key features.", "Mentored Help Desk Team.", "Led configuration of experimental departmental servers."],
+        techStack: "RHEL Server Management, Linux, Windows, JAMF, Active Directory, Windows Server 2019, Network Management, Security Management",
+        summaryPoints: [
+            "Led development of key features for departmental infrastructure.",
+            "Mentored Help Desk Team on best practices and troubleshooting.",
+            "Led configuration and deployment of experimental departmental servers."
+        ],
         dateRange: "2020 - Present"
     },
     {
@@ -67,7 +78,7 @@ export const timelineData: TimelineItem[] = [
         timelineType: "education",
         title: "Computer Engineering",
         techStack: "Embedded Systems, Microcontrollers, Digital Logic Design, Computer Architecture, Computer Networks, Computer Security, Computer Vision, Machine Learning",
-        summaryPoints: ["GPA: 3.5/4.0", " Dean's List: 2025"],
+        summaryPoints: ["GPA: 3.5/4.0", "Dean's List: 2025"],
         dateRange: "2021-2025"
     }
 ];

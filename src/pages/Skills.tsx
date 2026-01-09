@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Skills.css';
 
-import { FaReact, FaNodeJs, FaAws, FaDocker, FaGitAlt, FaJava, FaLinux, FaUbuntu, FaRedhat, FaWindows, FaServer, FaNetworkWired, FaBook, FaGraduationCap, FaPython, FaShieldAlt } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaAws, FaDocker, FaGitAlt, FaJava, FaLinux, FaUbuntu, FaRedhat, FaWindows, FaServer, FaNetworkWired, FaBook, FaGraduationCap, FaPython, FaShieldAlt, FaMicrochip, FaTasks, FaProjectDiagram, FaCode, FaTachometerAlt, FaChalkboardTeacher } from 'react-icons/fa';
 import { SiRubyonrails, SiTypescript, SiPostgresql, SiMysql, SiKubernetes, SiGooglecloud, SiSpringboot, SiPhp, SiNetlify, SiHeroku, SiHtml5, SiCss3, SiRabbitmq, SiImessage, SiCplusplus, SiGnubash, SiPowershell, SiVmware } from 'react-icons/si';
 import { Skill } from '../types';
 
@@ -37,6 +37,12 @@ const iconMap: { [key: string]: JSX.Element } = {
   SiGnubash: <SiGnubash />,
   SiPowershell: <SiPowershell />,
   SiVmware: <SiVmware />,
+  FaMicrochip: <FaMicrochip />,
+  FaTasks: <FaTasks />,
+  FaProjectDiagram: <FaProjectDiagram />,
+  FaCode: <FaCode />,
+  FaTachometerAlt: <FaTachometerAlt />,
+  FaChalkboardTeacher: <FaChalkboardTeacher />,
 };
 
 
