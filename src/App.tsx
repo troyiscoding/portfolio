@@ -13,6 +13,7 @@ const Blogs = React.lazy(() => import('./pages/Blogs'));
 const Certifications = React.lazy(() => import('./pages/Certifications'));
 const NaturePhotography = React.lazy(() => import('./pages/NaturePhotography'));
 const HomeHPC = React.lazy(() => import('./pages/HomeHPC'));
+const ResumeRedirect = React.lazy(() => import('./pages/ResumeRedirect'));
 const Layout = React.lazy(() => import('./Layout'));
 
 const App: React.FC = () => {
@@ -32,7 +33,7 @@ const App: React.FC = () => {
         <Route path="/certifications" element={<Layout><Certifications /></Layout>} />
         <Route path="/photography" element={<Layout><NaturePhotography /></Layout>} />
         <Route path="/hpc" element={<Layout><HomeHPC /></Layout>} />
-        <Route path="/resume" element={<Navigate to="/Resume.pdf" replace />} />
+        <Route path="/resume" element={<ResumeRedirect />} />
       </Routes>
     </React.Suspense>
   );
