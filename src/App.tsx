@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 const NetflixTitle = React.lazy(() => import('./NetflixTitle'));
 const Browse = React.lazy(() => import('./browse/browse'));
 const ProfilePage = React.lazy(() => import('./profilePage/profilePage'));
@@ -32,6 +32,7 @@ const App: React.FC = () => {
         <Route path="/certifications" element={<Layout><Certifications /></Layout>} />
         <Route path="/photography" element={<Layout><NaturePhotography /></Layout>} />
         <Route path="/hpc" element={<Layout><HomeHPC /></Layout>} />
+        <Route path="/resume" element={<Navigate to="/Resume.pdf" replace />} />
       </Routes>
     </React.Suspense>
   );
