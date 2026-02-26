@@ -199,10 +199,10 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
-"@remix-run/router@1.20.0":
-  version "1.20.0"
-  resolved "https://registry.npmjs.org/@remix-run/router/-/router-1.20.0.tgz"
-  integrity sha512-mUnk8rPJBI9loFDZ+YzPGdeniYK+FTmRD1TMCz7ev2SNIozyKKpnGgsxO34u6Z4z/t0ITuu7voi/AshfsGsgFg==
+"@remix-run/router@1.23.2":
+  version "1.23.2"
+  resolved "https://registry.npmjs.org/@remix-run/router/-/router-1.23.2.tgz"
+  integrity sha512-Ic6m2U/rMjTkhERIa/0ZtXJP17QUi2CbWE7cqx4J58M8aA3QTfW+2UlQ4psvTX9IO1RfNVhK3pcpdjej7L+t2w==
 
 "@rolldown/pluginutils@1.0.0-beta.27":
   version "1.0.0-beta.27"
@@ -491,19 +491,19 @@ react-refresh@^0.17.0:
   integrity sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==
 
 react-router-dom@^6.27.0:
-  version "6.27.0"
-  resolved "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.27.0.tgz"
-  integrity sha512-+bvtFWMC0DgAFrfKXKG9Fc+BcXWRUO1aJIihbB79xaeq0v5UzfvnM5houGUm1Y461WVRcgAQ+Clh5rdb1eCx4g==
+  version "6.30.3"
+  resolved "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.30.3.tgz"
+  integrity sha512-pxPcv1AczD4vso7G4Z3TKcvlxK7g7TNt3/FNGMhfqyntocvYKj+GCatfigGDjbLozC4baguJ0ReCigoDJXb0ag==
   dependencies:
-    "@remix-run/router" "1.20.0"
-    react-router "6.27.0"
+    "@remix-run/router" "1.23.2"
+    react-router "6.30.3"
 
-react-router@6.27.0:
-  version "6.27.0"
-  resolved "https://registry.npmjs.org/react-router/-/react-router-6.27.0.tgz"
-  integrity sha512-YA+HGZXz4jaAkVoYBE98VQl+nVzI+cVI2Oj/06F5ZM+0u3TgedN9Y9kmMRo2mnkSK2nCpNQn0DVob4HCsY/WLw==
+react-router@6.30.3:
+  version "6.30.3"
+  resolved "https://registry.npmjs.org/react-router/-/react-router-6.30.3.tgz"
+  integrity sha512-XRnlbKMTmktBkjCLE8/XcZFlnHvr2Ltdr1eJX4idL55/9BbORzyZEaIkBFDhFGCEWBBItsVrDxwx3gnisMitdw==
   dependencies:
-    "@remix-run/router" "1.20.0"
+    "@remix-run/router" "1.23.2"
 
 react-vertical-timeline-component@^3.6.0:
   version "3.6.0"
