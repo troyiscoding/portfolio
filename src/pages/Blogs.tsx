@@ -14,6 +14,13 @@ interface Blog {
 
 const blogs: Blog[] = [
   {
+    title: 'Why I Moved My Site to Cloudflare Pages',
+    platform: 'Writeup',
+    icon: <FaBookOpen />,
+    link: '/cloudflare-pages-failover',
+    description: 'Once the SSD looked risky, I needed a failover plan fast. Moving the static site to Cloudflare Pages gave me automatic GitHub-based deploys while I keep the rest of the homelab behind the tunnel.',
+  },
+  {
     title: 'Two Hours to Save a Server',
     platform: 'Writeup',
     icon: <FaBookOpen />,

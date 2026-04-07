@@ -16,6 +16,7 @@ const HomeHPC = React.lazy(() => import('./pages/HomeHPC'));
 const RuntimePlatform = React.lazy(() => import('./pages/RuntimePlatform'));
 const CurrentStack = React.lazy(() => import('./pages/CurrentStack'));
 const ServerRecovery = React.lazy(() => import('./pages/ServerRecovery'));
+const CloudflareFailover = React.lazy(() => import('./pages/CloudflareFailover'));
 const ResumeRedirect = React.lazy(() => import('./pages/ResumeRedirect'));
 const Layout = React.lazy(() => import('./Layout'));
 
@@ -39,6 +40,7 @@ const App: React.FC = () => {
         <Route path="/runtime-platform" element={<Layout><RuntimePlatform /></Layout>} />
         <Route path="/current-stack" element={<Layout><CurrentStack /></Layout>} />
         <Route path="/two-hours-to-save-a-server" element={<Layout><ServerRecovery /></Layout>} />
+        <Route path="/cloudflare-pages-failover" element={<Layout><CloudflareFailover /></Layout>} />
         <Route path="/resume" element={<ResumeRedirect />} />
       </Routes>
     </React.Suspense>

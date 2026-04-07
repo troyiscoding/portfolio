@@ -38,23 +38,24 @@
 
 .blogs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
   width: 100%;
+  max-width: 860px;
 }
 
 .blog-card {
   background: linear-gradient(180deg, rgba(30, 30, 30, 0.98), rgba(20, 20, 20, 0.98));
   border: 1px solid rgba(229, 9, 20, 0.16);
   border-radius: 16px;
-  padding: 1.2rem;
+  padding: 1.35rem;
   width: 100%;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   color: inherit;
   text-decoration: none;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 52px 1fr;
   gap: 1rem;
   cursor: pointer;
 }
@@ -67,6 +68,9 @@
 .blog-icon {
   font-size: 2.5rem;
   color: #e50914;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .blog-info {
@@ -100,5 +104,9 @@
 
   .blogs-title {
     font-size: 2rem;
+  }
+
+  .blog-card {
+    grid-template-columns: 1fr;
   }
 }

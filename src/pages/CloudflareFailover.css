@@ -1,0 +1,84 @@
+.cloudflare-failover-container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 100px 20px 48px;
+  color: #e5e5e5;
+  background:
+    radial-gradient(circle at top right, rgba(229, 9, 20, 0.14), transparent 24%),
+    #141414;
+  min-height: 100vh;
+  line-height: 1.7;
+}
+
+.cloudflare-failover-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 2rem;
+}
+
+.cloudflare-failover-eyebrow {
+  color: #e50914;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.82rem;
+  margin-bottom: 0.85rem;
+}
+
+.cloudflare-failover-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.cloudflare-failover-meta {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.cloudflare-failover-meta span {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(229, 9, 20, 0.18);
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+  color: #f3f3f3;
+  font-size: 0.92rem;
+}
+
+.cloudflare-failover-section,
+.cloudflare-failover-footer {
+  margin-bottom: 2.5rem;
+}
+
+.cloudflare-failover-section h2,
+.cloudflare-failover-footer h2 {
+  font-size: 1.7rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  border-left: 4px solid #e50914;
+  padding-left: 0.85rem;
+}
+
+.cloudflare-failover-section p,
+.cloudflare-failover-section li,
+.cloudflare-failover-footer p {
+  color: #d0d0d0;
+  font-size: 1.04rem;
+}
+
+.cloudflare-failover-section ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1.3rem;
+}
+
+.cloudflare-failover-section li + li {
+  margin-top: 0.55rem;
+}
+
+@media (max-width: 720px) {
+  .cloudflare-failover-header h1 {
+    font-size: 2.1rem;
+  }
+}
