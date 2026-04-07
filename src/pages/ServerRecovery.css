@@ -1,0 +1,133 @@
+.server-recovery-container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 100px 20px 48px;
+  color: #e5e5e5;
+  background:
+    radial-gradient(circle at top right, rgba(229, 9, 20, 0.14), transparent 24%),
+    #141414;
+  min-height: 100vh;
+  line-height: 1.7;
+}
+
+.server-recovery-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 2rem;
+}
+
+.server-recovery-eyebrow {
+  color: #e50914;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.82rem;
+  margin-bottom: 0.85rem;
+}
+
+.server-recovery-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.server-recovery-meta {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.server-recovery-meta span {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(229, 9, 20, 0.18);
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+  color: #f3f3f3;
+  font-size: 0.92rem;
+}
+
+.server-recovery-section,
+.server-recovery-footer {
+  margin-bottom: 2.5rem;
+}
+
+.server-recovery-section h2,
+.server-recovery-footer h2 {
+  font-size: 1.7rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  border-left: 4px solid #e50914;
+  padding-left: 0.85rem;
+}
+
+.server-recovery-section p,
+.server-recovery-section li,
+.server-recovery-footer p {
+  color: #d0d0d0;
+  font-size: 1.04rem;
+}
+
+.server-recovery-section ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1.3rem;
+}
+
+.server-recovery-section li + li {
+  margin-top: 0.55rem;
+}
+
+.server-recovery-code-block {
+  background: #000;
+  border: 1px solid rgba(229, 9, 20, 0.18);
+  border-radius: 8px;
+  padding: 15px;
+  margin: 1rem 0 1.25rem;
+  overflow-x: auto;
+}
+
+.server-recovery-code-block pre {
+  margin: 0;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  color: #f3f3f3;
+  font-size: 0.95rem;
+}
+
+.server-recovery-table {
+  display: grid;
+  gap: 0.6rem;
+  margin: 1.15rem 0;
+}
+
+.server-recovery-row {
+  display: grid;
+  grid-template-columns: 1.5fr 0.6fr 1.8fr;
+  gap: 1rem;
+  padding: 0.95rem 1rem;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(30, 30, 30, 0.98), rgba(20, 20, 20, 0.98));
+  border: 1px solid rgba(229, 9, 20, 0.14);
+}
+
+.server-recovery-row span {
+  color: #d8d8d8;
+}
+
+.server-recovery-row-header {
+  background: rgba(229, 9, 20, 0.14);
+}
+
+.server-recovery-row-header span {
+  color: #fff;
+  font-weight: 600;
+}
+
+@media (max-width: 720px) {
+  .server-recovery-header h1 {
+    font-size: 2.1rem;
+  }
+
+  .server-recovery-row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Projects.css';
-import { FaReact, FaNodeJs, FaAws, FaDatabase, FaDocker, FaAngular, FaGithub, FaGitlab, FaGoogle, FaJava, FaJenkins, FaMicrosoft, FaPython, FaVuejs } from 'react-icons/fa';
-import { SiRubyonrails, SiPostgresql, SiMongodb, SiMaterialdesign, SiHtml5, SiCss3, SiJquery, SiAwsamplify, SiFirebase, SiTerraform, SiArgo } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaAws, FaDatabase, FaDocker, FaAngular, FaGithub, FaGitlab, FaGoogle, FaJava, FaJenkins, FaMicrosoft, FaPython, FaVuejs, FaLinux, FaServer, FaLeaf, FaChartLine, FaTasks, FaLock, FaCode } from 'react-icons/fa';
+import { SiRubyonrails, SiPostgresql, SiMongodb, SiMaterialdesign, SiHtml5, SiCss3, SiJquery, SiAwsamplify, SiFirebase, SiTerraform, SiArgo, SiTypescript, SiVite, SiGnubash } from 'react-icons/si';
 import { Project } from '../types';
 import { projectsData } from '../data';
 import { GrDeploy, GrKubernetes } from "react-icons/gr";
@@ -58,6 +58,19 @@ const techIcons: { [key: string]: JSX.Element } = {
   'Tailwind CSS': <SiCss3 />,
   'Bootstrap': <SiCss3 />,
   'JQuery': <SiJquery />,
+  'TypeScript': <SiTypescript />,
+  'Vite': <SiVite />,
+  'Linux': <FaLinux />,
+  'Ubuntu': <FaLinux />,
+  'Server Hardware': <FaServer />,
+  'Sustainability': <FaLeaf />,
+  'Capacity Planning': <FaChartLine />,
+  'Slurm': <FaTasks />,
+  'Munge': <FaLock />,
+  'MPICH': <FaCode />,
+  'Bash': <SiGnubash />,
+  'CSS': <SiCss3 />,
+  'C++': <FaCode />,
 };
 
 const Projects: React.FC = () => {
@@ -84,7 +97,7 @@ const Projects: React.FC = () => {
               <div className="tech-used">
                 {project.techUsed.split(', ').map((tech, i) => (
                   <span key={i} className="tech-badge">
-                    {techIcons[tech] || "🔧"} {tech}
+                    {techIcons[tech] || <FaCode />} {tech}
                   </span>
                 ))}
               </div>

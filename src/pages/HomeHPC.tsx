@@ -1,6 +1,5 @@
 import React from 'react';
 import './HomeHPC.css';
-import { FaServer, FaTerminal, FaBug, FaProjectDiagram, FaBullseye, FaLightbulb, FaRocket } from 'react-icons/fa';
 
 const HomeHPC: React.FC = () => {
     return (
@@ -31,7 +30,7 @@ const HomeHPC: React.FC = () => {
             </section>
 
             <section className="hpc-section">
-                <h2><FaBullseye /> Goals</h2>
+                <h2>Goals</h2>
                 <ol>
                     <li>Bring up a working Slurm environment with clean node registration.</li>
                     <li>Submit and run batch jobs using <code>sbatch</code>, then validate output and job state transitions.</li>
@@ -41,7 +40,7 @@ const HomeHPC: React.FC = () => {
             </section>
 
             <section className="hpc-section">
-                <h2><FaProjectDiagram /> System Design</h2>
+                <h2>System Design</h2>
                 <p>
                     This is a single-node Slurm cluster. The same machine acts as:
                 </p>
@@ -54,7 +53,7 @@ const HomeHPC: React.FC = () => {
             </section>
 
             <section className="hpc-section">
-                <h2><FaServer /> Installation Overview</h2>
+                <h2>Installation Overview</h2>
                 <h3>Base Packages</h3>
                 <ul>
                     <li>munge</li>
@@ -69,7 +68,7 @@ const HomeHPC: React.FC = () => {
             </section>
 
             <section className="hpc-section">
-                <h2><FaTerminal /> Slurm Configuration</h2>
+                <h2>Slurm Configuration</h2>
                 <p><strong>Path:</strong> <code>/etc/slurm/slurm.conf</code></p>
                 <p><strong>Design Choices:</strong></p>
                 <ul>
@@ -167,7 +166,7 @@ Hello from rank 3 of 4 on pong`}
             </section>
 
             <section className="hpc-section">
-                <h2><FaBug /> Troubleshooting & Lessons Learned</h2>
+                <h2>Troubleshooting & Lessons Learned</h2>
                 <p>This section documents real failures encountered and the steps taken to resolve them.</p>
 
                 <div className="troubleshooting-item">
@@ -227,7 +226,7 @@ srun --mpi=pmi2 -n 4 ./mpi_hello`}
             </section>
 
             <section className="hpc-section">
-                <h2><FaLightbulb /> What this project demonstrates</h2>
+                <h2>What this project demonstrates</h2>
                 <p>This work aligns directly with common HPC consulting responsibilities:</p>
                 <ul>
                     <li>Linux troubleshooting with logs and services</li>
@@ -239,7 +238,7 @@ srun --mpi=pmi2 -n 4 ./mpi_hello`}
             </section>
 
             <section className="hpc-section">
-                <h2><FaRocket /> Future Improvements</h2>
+                <h2>Future Improvements</h2>
                 <ul>
                     <li>Add a second compute node via containers or lightweight VMs</li>
                     <li>Add environment modules (Lmod) to manage multiple compiler and MPI versions</li>

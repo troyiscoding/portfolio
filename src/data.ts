@@ -15,6 +15,13 @@ export const contactMeData: ContactMe = {
 
 export const projectsData: Project[] = [
     {
+        title: "Current Host Platform",
+        description: "A repurposed HP laptop hosting this site with documented hardware constraints, battery-backed ride-through, and sustainability tradeoffs.",
+        techUsed: "Linux, Server Hardware, Capacity Planning, Sustainability",
+        image: { url: "https://picsum.photos/seed/runtime-platform/300/200" },
+        link: "/runtime-platform"
+    },
+    {
         title: "Portfolio Website",
         description: "A personal portfolio website built with React and Vite.",
         techUsed: "React, Vite, TypeScript, CSS",
@@ -36,49 +43,40 @@ export const projectsData: Project[] = [
 ];
 
 export const skillsData: Skill[] = [
-    // Systems & Infrastructure
-    { name: "Linux Admin", category: "Systems & Infrastructure", description: "Expertise in Ubuntu & RHEL environments", icon: "FaLinux" },
-    { name: "Windows Server", category: "Systems & Infrastructure", description: "Clustering, HA, Active Directory", icon: "FaWindows" },
-    { name: "Server Hardware", category: "Systems & Infrastructure", description: "Rack management, bare metal provisioning", icon: "FaServer" },
-    { name: "High Availability", category: "Systems & Infrastructure", description: "Failover clustering & load balancing", icon: "FaServer" },
-    { name: "Virtualization", category: "Systems & Infrastructure", description: "VMware, Hyper-V, & Containerization", icon: "SiVmware" },
+    { name: "Windows Failover Clustering", category: "Infrastructure & Reliability", description: "Hands-on experience with Windows high availability design, cluster operations, and resilient service delivery.", icon: "FaWindows" },
+    { name: "Windows Server", category: "Infrastructure & Reliability", description: "Administration across Windows Server environments with a focus on uptime, patching, and operational consistency.", icon: "FaWindows" },
+    { name: "Hyper-V", category: "Infrastructure & Reliability", description: "Virtualized Windows infrastructure and host-level platform operations for lab and enterprise-style workloads.", icon: "SiVmware" },
+    { name: "Server Hardware", category: "Infrastructure & Reliability", description: "Bare-metal provisioning, hardware troubleshooting, and practical lifecycle management on constrained and enterprise systems.", icon: "FaServer" },
 
-    // Networking & Security
-    { name: "Networking", category: "Networking", description: "TCP/IP, VLANs, DNS/DHCP, VPNs", icon: "FaNetworkWired" },
-    { name: "Security", category: "Networking", description: "Firewall config, system hardening", icon: "FaShieldAlt" },
+    { name: "Active Directory", category: "Core Services", description: "Identity, domain-joined systems, and policy-driven administration in Windows-centric environments.", icon: "FaWindows" },
+    { name: "DNS", category: "Core Services", description: "Core name-resolution services for hybrid infrastructure, troubleshooting, and platform reliability.", icon: "FaNetworkWired" },
+    { name: "Networking", category: "Core Services", description: "TCP/IP, VLANs, DNS/DHCP, and practical network troubleshooting for service availability.", icon: "FaNetworkWired" },
+    { name: "Security Hardening", category: "Core Services", description: "System hardening, least-privilege thinking, and security-conscious operational practice.", icon: "FaShieldAlt" },
 
-    // Tools & Administration
-    { name: "Shell Scripting", category: "Tools", description: "Bash & PowerShell automation", icon: "SiGnubash" },
-    { name: "Documentation", category: "Tools", description: "Technical guides & system mapping", icon: "FaBook" },
-    { name: "Education Tech", category: "Tools", description: "LMS, classroom AV & support", icon: "FaGraduationCap" },
-    { name: "Windows Tools", category: "Tools", description: "SCCM, Jamf, Group Policy", icon: "FaWindows" },
+    { name: "PowerShell Automation", category: "Automation & Operations", description: "Automation for Windows administration, repeatable system changes, and operational efficiency.", icon: "SiPowershell" },
+    { name: "Bash & Linux Automation", category: "Automation & Operations", description: "Scripting for Linux administration, service control, repeatable provisioning, and troubleshooting.", icon: "SiGnubash" },
+    { name: "Documentation", category: "Automation & Operations", description: "Runbooks, technical guides, and system mapping that support reliable team operations.", icon: "FaBook" },
+    { name: "Monitoring & KPIs", category: "Automation & Operations", description: "Operational awareness using service health, alerting, and measurable infrastructure outcomes.", icon: "FaChartLine" },
 
-    // Programming
-    { name: "Python (ML)", category: "Programming", description: "Automation & Machine Learning models", icon: "FaPython" },
-    { name: "C / C++", category: "Programming", description: "System-level application development", icon: "SiC" },
-    { name: "Java", category: "Programming", description: "Object-oriented backend development", icon: "FaJava" },
-    { name: "React", category: "Programming", description: "Modern frontend web interfaces", icon: "FaReact" },
-
-    // HPC & Research Computing
-    { name: "HPC / MPI", category: "HPC & Research Computing", description: "Parallel processing & multi-threading", icon: "FaMicrochip" },
-    { name: "Batch Scheduling", category: "HPC & Research Computing", description: "Slurm, Moab, LSF job management", icon: "FaTasks" },
-    { name: "Code Optimization", category: "HPC & Research Computing", description: "Algorithm improvement & profiling", icon: "FaTachometerAlt" },
-    { name: "Compiling / Make", category: "HPC & Research Computing", description: "Building from source & Makefile creation", icon: "FaCode" },
-    { name: "Technical Training", category: "HPC & Research Computing", description: "User support & documentation", icon: "FaChalkboardTeacher" }
+    { name: "Linux Administration", category: "Hybrid Systems", description: "Ubuntu and RHEL administration for mixed-platform environments and service support.", icon: "FaLinux" },
+    { name: "Virtualization", category: "Hybrid Systems", description: "Hyper-V, VMware, and virtual lab design to support testing, validation, and platform learning.", icon: "SiVmware" },
+    { name: "Incident Troubleshooting", category: "Hybrid Systems", description: "Structured debugging across services, operating systems, and infrastructure dependencies.", icon: "FaTools" },
+    { name: "Operational Reliability", category: "Hybrid Systems", description: "Focus on uptime, change discipline, recovery readiness, and scalable operational habits.", icon: "FaServer" }
 ];
 
 export const timelineData: TimelineItem[] = [
     {
         name: "BYU Physics and Astronomy Department - Provo, Utah",
         timelineType: "work",
-        title: "Systems Engineer/ JR. Systems Administrator",
-        techStack: "RHEL Server Management, Linux, Windows, JAMF, Active Directory, Windows Server 2019, Network Management, Security Management",
+        title: "Systems Engineer / Jr. Systems Administrator",
+        techStack: "Windows Server, Linux Administration, Active Directory, Windows High Availability, JAMF, Network Operations, Security Practices, Technical Documentation",
         summaryPoints: [
-            "Led development of key features for departmental infrastructure.",
-            "Mentored Help Desk Team on best practices and troubleshooting.",
-            "Led configuration and deployment of experimental departmental servers."
+            "Supported mixed Windows and Linux infrastructure for departmental systems, user services, and research environments.",
+            "Worked on Windows Server administration, Active Directory, and high-availability-minded infrastructure improvements for reliability and uptime.",
+            "Configured, deployed, and troubleshot departmental servers while documenting operational knowledge for more consistent support.",
+            "Mentored Help Desk staff on troubleshooting, escalation, and day-to-day systems support practices."
         ],
-        dateRange: "2020 - Present"
+        dateRange: "2020 - 2026"
     },
     {
         name: "BYU Ira A. Fulton College of Engineering - Provo, Utah ",
@@ -101,14 +99,20 @@ export const certificationsData: Certification[] = [
     {
         title: "Network+",
         issuer: "CompTIA",
-        issuedDate: "Coming 2026",
+        status: "In Progress",
+        targetDate: "Target completion: July 2026",
+        summary: "Strengthening core networking knowledge for infrastructure operations, troubleshooting, and service delivery.",
+        focusAreas: ["Subnetting and routing", "DNS and DHCP fundamentals", "Switching and network troubleshooting"],
         link: "https://www.comptia.org/certifications/network",
         iconName: "network"
     },
     {
         title: "Security+",
         issuer: "CompTIA",
-        issuedDate: "Coming 2026",
+        status: "In Progress",
+        targetDate: "Target completion: October 2026",
+        summary: "Building deeper security fundamentals for hardening, compliance-aware operations, and incident response.",
+        focusAreas: ["Identity and access control", "System hardening and risk reduction", "Security monitoring and response"],
         link: "https://www.comptia.org/certifications/security",
         iconName: "security"
     }

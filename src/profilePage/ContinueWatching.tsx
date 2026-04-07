@@ -12,12 +12,16 @@ const continueWatchingConfig = {
   recruiter: [
     { title: "Blogs", imgSrc: "https://picsum.photos/id/1027/300/200", link: "/blogs" },
     { title: "Home Lab HPC", imgSrc: "https://picsum.photos/seed/hpc/300/200", link: "/hpc" },
+    { title: "What I'm Running", imgSrc: "https://picsum.photos/seed/current-stack/300/200", link: "/current-stack" },
+    { title: "Current Host Platform", imgSrc: "https://picsum.photos/seed/runtime-platform/300/200", link: "/runtime-platform" },
     { title: "Photography", imgSrc: "https://picsum.photos/seed/photography/300/200", link: "/photography" },
     { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }
   ],
   developer: [
     { title: "Blogs", imgSrc: "https://picsum.photos/id/1027/300/200", link: "/blogs" },
     { title: "Home Lab HPC", imgSrc: "https://picsum.photos/seed/hpc/300/200", link: "/hpc" },
+    { title: "What I'm Running", imgSrc: "https://picsum.photos/seed/current-stack/300/200", link: "/current-stack" },
+    { title: "Current Host Platform", imgSrc: "https://picsum.photos/seed/runtime-platform/300/200", link: "/runtime-platform" },
     { title: "Certifications", imgSrc: "https://picsum.photos/id/1028/300/200", link: "/certifications" },
     { title: "Photography", imgSrc: "https://picsum.photos/seed/photography/300/200", link: "/photography" },
     { title: "Contact Me", imgSrc: "https://picsum.photos/id/1029/300/200", link: "/contact-me" }

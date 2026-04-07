@@ -1,6 +1,7 @@
 import React from 'react';
 import './Blogs.css';
-import { FaMedium, FaDev } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaBookOpen } from 'react-icons/fa';
 
 interface Blog {
   title: string;
@@ -8,48 +9,52 @@ interface Blog {
   icon: JSX.Element;
   link: string;
   description: string;
+  external?: boolean;
 }
 
 const blogs: Blog[] = [
-  // {
-  //   title: "Make Your Rails Console Look Better",
-  //   platform: "Medium",
-  //   icon: <FaMedium />,
-  //   link: "https://medium.com/@chintusamala96/make-your-rails-console-look-better-510988d40566",
-  //   description: "Learn tips to customize your Rails console for a better experience.",
-  // },
-  // {
-  //   title: "Docker Fundas - My Version",
-  //   platform: "Medium",
-  //   icon: <FaMedium />,
-  //   link: "https://medium.com/@chintusamala96/docker-fundas-my-version-7b9262bd90d4",
-  //   description: "An introductory guide to Docker fundamentals from my perspective.",
-  // },
-  // {
-  //   title: "Grape Gem in Ruby on Rails: Handling User Model and API Endpoint",
-  //   platform: "Dev.to",
-  //   icon: <FaDev />,
-  //   link: "https://dev.to/samalasumanth0262/grape-gem-in-ruby-on-rails-handling-user-model-and-api-endpoint-g6d",
-  //   description: "A guide to using the Grape gem for API development in Ruby on Rails.",
-  // },
+  {
+    title: 'Two Hours to Save a Server',
+    platform: 'Writeup',
+    icon: <FaBookOpen />,
+    link: '/two-hours-to-save-a-server',
+    description: 'How I tracked down repeated server freezes, confirmed a failing SSD, and got a backup pipeline running before the disk gave out.',
+  },
 ];
 
 const Blogs: React.FC = () => {
   return (
     <div className="blogs-container">
-      <h2 className="blogs-title">✍️ My Blog Posts</h2>
-      <p className="blogs-intro">A collection of my thoughts and tutorials on software development.</p>
+      <p className="blogs-eyebrow">Writing</p>
+      <h1 className="blogs-title">Writeups, notes, and projects that taught me something</h1>
+      <p className="blogs-intro">A place for technical writeups from the homelab and the kinds of problems I like digging into.</p>
       <div className="blogs-grid">
-        {blogs.map((blog, index) => (
-          <a href={blog.link} key={index} target="_blank" rel="noopener noreferrer" className="blog-card" style={{ '--delay': `${index * 0.2}s` } as React.CSSProperties}>
-            <div className="blog-icon animated-icon">{blog.icon}</div>
-            <div className="blog-info animated-text">
-              <h3 className="blog-title">{blog.title}</h3>
-              <p className="blog-description">{blog.description}</p>
-              <span className="blog-platform">{blog.platform}</span>
-            </div>
-          </a>
-        ))}
+        {blogs.map((blog, index) => {
+          const card = (
+            <>
+              <div className="blog-icon">{blog.icon}</div>
+              <div className="blog-info">
+                <h2 className="blog-title">{blog.title}</h2>
+                <p className="blog-description">{blog.description}</p>
+                <span className="blog-platform">{blog.platform}</span>
+              </div>
+            </>
+          );
+
+          if (blog.external) {
+            return (
+              <a href={blog.link} key={index} target="_blank" rel="noopener noreferrer" className="blog-card" style={{ '--delay': `${index * 0.12}s` } as React.CSSProperties}>
+                {card}
+              </a>
+            );
+          }
+
+          return (
+            <Link to={blog.link} key={index} className="blog-card" style={{ '--delay': `${index * 0.12}s` } as React.CSSProperties}>
+              {card}
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

@@ -1,23 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { MdOutlineWork as WorkIcon } from 'react-icons/md';
 import { IoSchool as SchoolIcon } from 'react-icons/io5';
 import { FaStar as StarIcon } from 'react-icons/fa';
 import './WorkExperience.css';
-import { TimelineItem } from '../types';
-
 
 import { timelineData } from '../data';
 
 const WorkExperience: React.FC = () => {
-
   const timeLineData = timelineData;
 
   return (
     <>
       <div className="timeline-container">
-        <h2 className="timeline-title"> Work Experience & Education Timeline</h2>
+        <p className="timeline-eyebrow">Experience</p>
+        <h1 className="timeline-title">Systems, Infrastructure, and Operations Experience</h1>
+        <p className="timeline-intro">
+          Most of my experience has centered on keeping systems usable, improving reliability, and supporting the
+          Windows and Linux infrastructure behind day-to-day operations.
+        </p>
       </div>
       <VerticalTimeline>
         {timeLineData.map((item, index) => (
@@ -26,41 +28,39 @@ const WorkExperience: React.FC = () => {
             className={`vertical-timeline-element--${item.timelineType}`}
             contentStyle={
               item.timelineType === "work"
-                ? index === 0
-                  ? { background: 'rgb(33, 150, 243)', color: '#fff' }
-                  : { background: 'rgb(240, 240, 240)', color: '#fff' }
-                : { background: 'rgb(255, 224, 230)', color: '#fff' } // Lighter red for education
+                ? { background: 'linear-gradient(180deg, rgba(32, 32, 32, 0.98), rgba(20, 20, 20, 0.98))', color: '#fff', border: '1px solid rgba(229, 9, 20, 0.18)', boxShadow: '0 12px 26px rgba(0, 0, 0, 0.22)' }
+                : { background: 'linear-gradient(180deg, rgba(42, 24, 28, 0.98), rgba(30, 18, 22, 0.98))', color: '#fff', border: '1px solid rgba(229, 9, 20, 0.16)', boxShadow: '0 12px 26px rgba(0, 0, 0, 0.18)' }
             }
             contentArrowStyle={
               item.timelineType === "work"
-                ? { borderRight: index === 0 ? '7px solid rgb(33, 150, 243)' : '7px solid rgb(240, 240, 240)' }
-                : { borderRight: '7px solid rgb(255, 224, 230)' }
+                ? { borderRight: '7px solid rgba(32, 32, 32, 0.98)' }
+                : { borderRight: '7px solid rgba(42, 24, 28, 0.98)' }
             }
             date={item.dateRange}
             iconStyle={
               item.timelineType === "work"
-                ? { background: 'rgb(33, 150, 243)', color: '#fff' }
-                : { background: 'rgb(255, 160, 200)', color: '#fff' } // Softer red for education icon
+                ? { background: 'rgb(229, 9, 20)', color: '#fff' }
+                : { background: 'rgb(143, 30, 43)', color: '#fff' }
             }
             icon={item.timelineType === "work" ? <WorkIcon /> : <SchoolIcon />}
           >
-            {item.timelineType === "work" ? (
-              <div style={{ color: 'black' }}>
+            {item.timelineType === 'work' ? (
+              <div className="timeline-card-content">
                 <h3 className="vertical-timeline-element-title">{item.title}</h3>
                 <h4 className="vertical-timeline-element-subtitle">{item.name}</h4>
-                <p className="vertical-timeline-element-tech"><strong>Tech Stack:</strong> {item.techStack}</p>
-                <ul className="vertical-timeline-element-points" style={{ paddingLeft: '20px', marginTop: '10px' }}>
+                <p className="vertical-timeline-element-tech"><strong>Focus Areas:</strong> {item.techStack}</p>
+                <ul className="vertical-timeline-element-points">
                   {item.summaryPoints.map((point, i) => (
                     <li key={i}>{point}</li>
                   ))}
                 </ul>
               </div>
             ) : (
-              <div style={{ color: 'black' }}>
+              <div className="timeline-card-content">
                 <h3 className="vertical-timeline-element-title">{item.name}</h3>
                 <h4 className="vertical-timeline-element-subtitle">{item.title}</h4>
                 {item.techStack && <p className="vertical-timeline-element-tech"><strong>Focus:</strong> {item.techStack}</p>}
-                <ul className="vertical-timeline-element-points" style={{ paddingLeft: '20px', marginTop: '10px' }}>
+                <ul className="vertical-timeline-element-points">
                   {item.summaryPoints.map((point, i) => (
                     <li key={i}>{point}</li>
                   ))}
@@ -70,7 +70,7 @@ const WorkExperience: React.FC = () => {
           </VerticalTimelineElement>
         ))}
         <VerticalTimelineElement
-          iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+          iconStyle={{ background: 'rgb(229, 9, 20)', color: '#fff' }}
           icon={<StarIcon />}
         />
       </VerticalTimeline>

@@ -13,6 +13,9 @@ const Blogs = React.lazy(() => import('./pages/Blogs'));
 const Certifications = React.lazy(() => import('./pages/Certifications'));
 const NaturePhotography = React.lazy(() => import('./pages/NaturePhotography'));
 const HomeHPC = React.lazy(() => import('./pages/HomeHPC'));
+const RuntimePlatform = React.lazy(() => import('./pages/RuntimePlatform'));
+const CurrentStack = React.lazy(() => import('./pages/CurrentStack'));
+const ServerRecovery = React.lazy(() => import('./pages/ServerRecovery'));
 const ResumeRedirect = React.lazy(() => import('./pages/ResumeRedirect'));
 const Layout = React.lazy(() => import('./Layout'));
 
@@ -33,6 +36,9 @@ const App: React.FC = () => {
         <Route path="/certifications" element={<Layout><Certifications /></Layout>} />
         <Route path="/photography" element={<Layout><NaturePhotography /></Layout>} />
         <Route path="/hpc" element={<Layout><HomeHPC /></Layout>} />
+        <Route path="/runtime-platform" element={<Layout><RuntimePlatform /></Layout>} />
+        <Route path="/current-stack" element={<Layout><CurrentStack /></Layout>} />
+        <Route path="/two-hours-to-save-a-server" element={<Layout><ServerRecovery /></Layout>} />
         <Route path="/resume" element={<ResumeRedirect />} />
       </Routes>
     </React.Suspense>

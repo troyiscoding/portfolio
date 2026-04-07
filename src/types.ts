@@ -37,7 +37,10 @@ export interface Project {
 export interface Certification {
   title: string;
   issuer: string;
-  issuedDate: string;
+  status: string;
+  targetDate: string;
+  summary: string;
+  focusAreas: string[];
   link: string;
   iconName: string;
 }
